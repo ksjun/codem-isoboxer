@@ -156,13 +156,13 @@ ISOBoxer.Utils.appendBox = function(parent, box, pos) {
 };
 // @endif
 
-if (typeof exports !== 'undefined') {
-  exports.parseBuffer     = ISOBoxer.parseBuffer;
-  exports.addBoxProcessor = ISOBoxer.addBoxProcessor;
+export default {
+  parseBuffer: ISOBoxer.parseBuffer,
+  addBoxProcessor: ISOBoxer.addBoxProcessor,
   // @if WRITE
-  exports.createFile      = ISOBoxer.createFile;
-  exports.createBox       = ISOBoxer.createBox;
-  exports.createFullBox   = ISOBoxer.createFullBox;
+  createFile: ISOBoxer.createFile,
+  createBox: ISOBoxer.createBox,
+  createFullBox: ISOBoxer.createFullBox,
   // @endif
-  exports.Utils           = ISOBoxer.Utils;
+  Utils: ISOBoxer.Utils,
 }
